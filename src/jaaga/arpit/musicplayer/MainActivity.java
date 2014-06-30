@@ -1,8 +1,8 @@
 package jaaga.arpit.musicplayer;
 
+import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
@@ -45,7 +44,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	@Override
 	public void onItemClick(AdapterView<?> adt, View arg1, int arg2, long arg3) {
 		// TODO Auto-generated method stub
-		TextView temp = (TextView) arg1;
+		//TextView temp = (TextView) arg1;
 	    if(arg2 == 0)
 	    {
 	    	Log.e("banana", "0");
