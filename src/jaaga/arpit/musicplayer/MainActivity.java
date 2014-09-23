@@ -1,5 +1,6 @@
 package jaaga.arpit.musicplayer;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
@@ -22,6 +24,13 @@ public class MainActivity extends Activity implements OnItemClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        		
+        getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
+        getActionBar().setCustomView(R.layout.abs_layout);
+        
+        TextView actionBarTitle = (TextView)findViewById(R.id.mytext);
+        actionBarTitle.setText("Music Player");
+        
         for(int i=0;i<4;i++)
         {
         	media[i]=MediaPlayer.create(this, med[i]);

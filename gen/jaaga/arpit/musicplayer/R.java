@@ -166,11 +166,14 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0001;
-        public static final int listView1=0x7f0a0000;
+        public static final int action_settings=0x7f0a0003;
+        public static final int action_shuffle=0x7f0a0002;
+        public static final int listView1=0x7f0a0001;
+        public static final int mytext=0x7f0a0000;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int abs_layout=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f090000;
